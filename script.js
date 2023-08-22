@@ -1,5 +1,4 @@
 const whiteKeys = ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p"];
-
 const blackKeys = ["a", "s", "d", "f", "g", "h", "j", "k", "l"];
 
 const outerContainer = document.querySelector(".outer");
@@ -12,7 +11,6 @@ function createButtons(container, classNames, keyArray, isBlack) {
     button.classList.add(classNames);
     button.setAttribute("data-id", index);
     container.appendChild(button);
-
     button.addEventListener("click", () => playButtonNote(button, isBlack));
   });
 }
@@ -23,7 +21,6 @@ function createAudioElements(container, total) {
     audio.id = "aud" + i;
     audio.className = "audioMain";
     container.appendChild(audio);
-
     const source = document.createElement("source");
     source.src = i + ".mp3";
     source.type = "audio/mp3";
