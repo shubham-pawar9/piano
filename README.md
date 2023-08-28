@@ -1,4 +1,4 @@
-# piano
+# Piano
 Interactive Virtual Piano
 
 The "Piano Template" project is a dynamic and interactive web application that replicates the functionality of a piano keyboard. 
